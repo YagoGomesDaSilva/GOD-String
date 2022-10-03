@@ -2,8 +2,6 @@
 
 # Lista de Exercícios 1 — Unidade 2
 
-Está atividade é **individual** e corresponde à metade da nota da segunda unidade.
-
 Implemente uma aplicação em C++ para representação de cadeias de caracteres. A cadeia de caracteres deve ser representada por uma classe com ao menos três construtores: um sem parâmetros, representando a cadeia vazia; um recebendo um literal (string entre aspas duplas) da linguagem C++ de modo que a cadeia deve representar o literal indicado; e o último recebendo um objeto da mesma classe de modo a cadeia deve ser uma cópia do argumento.
 
 Escolha a representação dos atributos entre o objeto std::vector, o objeto std::array ou um array da linguagem C++. O nível de dificuldade da implementação está diretamente relacionada com a representação escolhida sendo a mais fácil usando o std::vector e a mais difícil sem o uso de objetos. Neste último, é necessário o uso de alocação dinâmica de memória para redimensionamento da cadeia.
@@ -26,12 +24,5 @@ Após a escolha da representação dos atributos, você deve implementar os segu
 15. Método para partição da cadeia por um caractere, isto é, a cadeia será separada num vetor de cadeias onde um caractere de controle deve ser fornecido de modo que a cadeia terá uma parte antes do caractere e outra depois do caractere de controle. Observe que a parte pode ser a cadeia vazia e essa operação deve ser aplicadas para todas as ocorrências do caractere de controle. Logo, se o caractere de controle aparece N vezes na cadeia então deve ser retornado um std::vector de N+1 posições. Por exemplo, para a cadeia "uma frase longa" e o caractere de controle ' ' deve ser retornado o vetor {"uma", "frase", "longa"}.
 16. Método para partição da cadeia por outra cadeia similar a partição por caractere.
 
-Além disso, você deve criar testes para verificar se cada método faz o que deveria fazer. Para isso, crie um arquivo de código-fonte com uma função para verificar cada um dos métodos criados incluindo os construtores (o destrutor também, caso exista). É opcional o uso de algum framework para execução de testes, por exemplos:
-
-- https://github.com/catchorg/Catch2
-- https://google.github.io/googletest/
-- https://cpptest.sourceforge.io/
-
-A lista será avaliada com peso 2 para os construtores, atributos e métodos com exceção do método de busca por cadeia e os métodos de partição que possuem peso 4. Além disso, a aplicação de modularização tem peso 4 e cada função de teste possui peso 1.
 
 Observação: a aplicação não deve usar a classe std:string, biblioteca string.h ou similar.
